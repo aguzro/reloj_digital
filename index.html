@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Reloj Digital</title>
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!--Import Google Icon Font-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
+		<!-- Compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+	<!-- Hora y Fecha Local -->
+		<section class="elementos_base">
+			<div class="container">
+				<div class="row">	
+					<div class="col s12">
+						<h1 id="tiempo"></h1>
+					</div>
+				</div>
+			</div>	
+			<div class="container">
+				<div class="row">	
+					<div class="col s12">
+						<h5 id="fecha"></h5>
+					</div>
+				</div>	
+			</div>
+		</section> <!-- fin hora y fecha local -->
+
+		<!-- Hora Mundial -->
+		<section class="horarioInt">
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<p id="demo"></p>
+					</div>	
+				</div>
+			</div>
+		</section>
+
+		<section>	
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<p class="">
+							<a id="myBtn" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">access_time</i></a>
+						</p>
+						<!-- Modal -->
+						<div id="myModal" class="modal">
+							<!-- Contenido de  Modal -->
+							<div class="modal-content">
+								<div class="modal-header">
+									<span class="close"><i class="material-icons">close</i></span>
+									<h5>Horarios</h5>
+								</div>
+								<div class="modal-body">
+									<form action="#">
+										<p>
+											<input type="checkbox" id="test1" />
+											<label for="test1">Buenos Aires - Argentina</label>
+										</p>
+										<p>
+											<input type="checkbox" id="test2" />
+											<label for="test2">Sao Paulo - Brasil</label>
+										</p>
+										<p>
+											<input type="checkbox" id="test3" />
+											<label for="test3">México DF - México</label>
+										</p>
+										<p>
+											<input type="checkbox" id="test4" />
+											<label for="test4">Caracas - Venezuela</label>
+										</p>
+										<p>
+											<input type="checkbox" id="test5" />
+											<label for="test5">Quito - Ecuador</label>
+										</p>
+										<p>
+											<input type="checkbox" id="test6" />
+											<label for="test6">La Paz - Bolivia</label>
+										</p>
+										<p>
+											<input type="checkbox" id="test7" />
+											<label for="test7">Asunción - Paraguay</label>
+										</p>
+										<p>
+											<input type="checkbox" id="test8" />
+											<label for="test8">Bogotá - Colombia</label>
+										</p>
+									</form> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>	
+		</section>
+		
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+		
+	</body>
+</html>
